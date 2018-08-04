@@ -22,7 +22,7 @@ def check_range(arg):
 
     return value
 
-parser.add_argument("--frame-value", type=check_range, nargs="?", help="Frame value")
+parser.add_argument("--frame-value", type=check_range, default=DEFAULT_FRAME_VALUE, nargs="?", help="Frame value")
 parser.add_argument('--universe', dest='universe', type=int, default=DEFAULT_UNIVERSE, help="DMX universe")
 parser.add_argument('--tick-interval', dest='tick_interval', type=int, default=DEFAULT_TICK_INTERVAL, help="Tick (callback) interval")
 
